@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tharaga Reviews</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #faf8f6;
+      margin: 0;
+      padding: 0;
+    }
+    .review-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 50px auto;
+      padding: 0 20px;
+      font-family: 'Poppins', sans-serif;
+    }
+    .review-card {
+      background: #fff;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.06);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .review-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+    }
+    .review-name {
+      font-weight: 600;
+      font-size: 1.05rem;
+      margin-bottom: 8px;
+      color: #0e0e0e;
+    }
+    .review-stars {
+      color: #FFD700;
+      margin-bottom: 10px;
+      font-size: 1rem;
+    }
+    .review-text {
+      font-size: 0.95rem;
+      color: #2f2f2f;
+      line-height: 1.5;
+    }
+    @media (max-width: 900px) {
+      .review-grid {
+        grid-template-columns: repeat(1, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="review-grid">
+    <div class="review-card">
+      <div class="review-name">Ramesh Kumar – Chennai</div>
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">
+        Tharaga made the entire property listing process smooth and transparent. Within a week, I received genuine inquiries from serious buyers.
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-name">Priya S – Chennai</div>
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">
+        I was impressed with how well my apartment was showcased. The platform feels trustworthy, and I appreciate the verified listing approach.
+      </div>
+    </div>
+    <div class="review-card">
+      <div class="review-name">Karthik Raj – Chennai</div>
+      <div class="review-stars">⭐⭐⭐⭐⭐</div>
+      <div class="review-text">
+        Finally, a site that cuts through the broker chaos. I sold my property directly to a buyer without paying unnecessary commissions.
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
