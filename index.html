@@ -73,13 +73,16 @@
     /* 🔹 If iframe is very narrow (under 500px) */
     @media (max-width: 500px) {
   .review-grid {
-    grid-template-columns: repeat(3, minmax(0, 1fr)); /* ✅ Fit inside container */
-    gap: 8px; /* ✅ Smaller gap for mobile */
-    padding: 0; /* ✅ Remove side padding so it fits in iframe */
+    display: flex; /* ✅ Horizontal layout */
+    gap: 12px;
+    overflow-x: auto; /* ✅ Allow horizontal scroll */
+    padding: 0 10px;
+    scroll-snap-type: x mandatory; /* ✅ Smooth snapping if you want */
   }
 
   .review-card {
-    padding: 10px; /* ✅ Reduce padding so content fits */
+    flex: 0 0 80%; /* ✅ Each card takes 80% of iframe width */
+    scroll-snap-align: start;
   }
 }
   </style>
