@@ -72,10 +72,16 @@
 
     /* 🔹 If iframe is very narrow (under 500px) */
     @media (max-width: 500px) {
-      .review-grid {
-        grid-template-columns: repeat(3, 1fr); /* Force all 3 in one row */
-      }
-    }
+  .review-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr)); /* ✅ Fit inside container */
+    gap: 8px; /* ✅ Smaller gap for mobile */
+    padding: 0; /* ✅ Remove side padding so it fits in iframe */
+  }
+
+  .review-card {
+    padding: 10px; /* ✅ Reduce padding so content fits */
+  }
+}
   </style>
 </head>
 <body>
